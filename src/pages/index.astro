@@ -1,0 +1,103 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProductList from '../components/ProductList';
+import ProductCarousel from '../components/ProductCarousel';
+import CategoryCarousel from '../components/CategoryCarousel';
+import { obtenerProductos, obtenerCategorias, obtenerMarcas } from '../lib/products';
+
+const productos = obtenerProductos();
+const categorias = obtenerCategorias();
+const marcas = obtenerMarcas();
+const productosDestacados = productos.slice(0, 6);
+
+const url = Astro.url;
+const busquedaInicial = url.searchParams.get('busqueda') || '';
+const categoriaInicial = url.searchParams.get('categoria') || '';
+---
+
+<Layout 
+  title="Catálogo de Productos | ABASA"
+  description="Herramientas y equipos industriales de calidad. Abastecedora industrial en México y Estados Unidos."
+>
+  <section class="bg-gradient-to-b from-white to-gray-50 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+      <div class="text-center max-w-3xl mx-auto">
+        <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+          Herramientas y Equipos Industriales
+        </h1>
+        <p class="text-base text-gray-600 mb-6">
+          Abastecedora industrial con presencia en México y Estados Unidos.
+        </p>
+        <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            Piedras Negras, Coahuila
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            San Pedro Garza García, NL
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 616 0z"></path>
+            </svg>
+            Eagle Pass, Texas
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-12 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-2">Comprar por categoría</h2>
+        <p class="text-gray-600">Explora nuestras líneas de productos especializadas</p>
+      </div>
+      
+      <div class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
+        <CategoryCarousel categorias={categorias} client:load />
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-2">Más vendidos</h2>
+        <p class="text-gray-600">Los productos más populares de nuestro catálogo</p>
+      </div>
+      
+      <div class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
+        <ProductCarousel productos={productosDestacados} client:load />
+      </div>
+    </div>
+  </section>
+
+  <section id="todos-productos" class="bg-white py-12 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-2">Todos los productos</h2>
+        <p class="text-gray-600">Explora nuestro catálogo completo</p>
+      </div>
+      
+      <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+        <ProductList 
+          productos={productos} 
+          categorias={categorias} 
+          marcas={marcas}
+          busquedaInicial={busquedaInicial}
+          categoriaInicial={categoriaInicial}
+          client:load 
+        />
+      </div>
+    </div>
+  </section>
+</Layout>

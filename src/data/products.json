@@ -1,0 +1,206 @@
+[
+  {
+    "id": 1,
+    "nombre": "Taladro Industrial Bosch GBM 13",
+    "slug": "taladro-industrial-bosch-gbm-13",
+    "descripcion": "Taladro industrial de alta potencia con motor de 600W, ideal para trabajos pesados en metal y concreto.",
+    "categoria": "Herramientas Eléctricas",
+    "marca": "Bosch",
+    "precio": 3499.99,
+    "imagen": "/images/GBM 13 RE Professional",
+    "stock": 25,
+    "especificaciones": {
+      "potencia": "600W",
+      "velocidad": "0-2600 RPM",
+      "peso": "1.7 kg",
+      "voltaje": "120V"
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Esmeriladora Angular DeWalt DWE402",
+    "slug": "esmeriladora-angular-dewalt-dwe402",
+    "descripcion": "Esmeriladora angular de 4.5 pulgadas con motor de 11 amperios para corte y desbaste de materiales diversos.",
+    "categoria": "Herramientas Eléctricas",
+    "marca": "DeWalt",
+    "precio": 2899.99,
+    "imagen": "/images/Esmeriladora Angular DeWalt DWE402.jpg",
+    "stock": 18,
+    "especificaciones": {
+      "potencia": "11 AMP",
+      "diametro": "4.5 pulgadas",
+      "velocidad": "11,000 RPM",
+      "peso": "2.1 kg"
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Compresor de Aire Industrial 50L",
+    "slug": "compresor-aire-industrial-50l",
+    "descripcion": "Compresor de aire portátil de 50 litros con motor de 2HP, perfecto para talleres y aplicaciones industriales.",
+    "categoria": "Equipos de Aire",
+    "marca": "Campbell Hausfeld",
+    "precio": 8999.99,
+    "imagen": "/images/Compresor de Aire Industrial 50L",
+    "stock": 8,
+    "especificaciones": {
+      "capacidad": "50 litros",
+      "potencia": "2 HP",
+      "presion": "150 PSI",
+      "peso": "28 kg"
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Soldadora Inversora MIG 200A",
+    "slug": "soldadora-inversora-mig-200a",
+    "descripcion": "Soldadora MIG/MAG profesional con tecnología inversora, ideal para trabajos en acero, acero inoxidable y aluminio.",
+    "categoria": "Equipos de Soldadura",
+    "marca": "Lincoln Electric",
+    "precio": 12499.99,
+    "imagen": "/images/Soldadora Inversora MIG 200A",
+    "stock": 5,
+    "especificaciones": {
+      "corriente": "200A",
+      "ciclo": "60%",
+      "entrada": "220V",
+      "peso": "15 kg"
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Juego de Llaves Combinadas 12 Piezas",
+    "slug": "juego-llaves-combinadas-12-piezas",
+    "descripcion": "Set profesional de llaves combinadas métricas de 8mm a 19mm, fabricadas en acero cromo-vanadio.",
+    "categoria": "Herramientas Manuales",
+    "marca": "Stanley",
+    "precio": 899.99,
+    "imagen": "/images/Juego de Llaves Combinadas 12 Piezas",
+    "stock": 42,
+    "especificaciones": {
+      "piezas": "12 piezas",
+      "material": "Cromo-vanadio",
+      "rango": "8-19mm",
+      "acabado": "Cromado"
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Sierra Circular Makita 7.25 pulgadas",
+    "slug": "sierra-circular-makita-7-25-pulgadas",
+    "descripcion": "Sierra circular profesional de 7.25 pulgadas con motor de 15 amperios y sistema de ajuste de profundidad.",
+    "categoria": "Herramientas Eléctricas",
+    "marca": "Makita",
+    "precio": 3299.99,
+    "imagen": "/images/Sierra Circular Makita 7.25 pulgadas",
+    "stock": 15,
+    "especificaciones": {
+      "potencia": "15 AMP",
+      "disco": "7.25 pulgadas",
+      "velocidad": "5,000 RPM",
+      "peso": "3.5 kg"
+    }
+  },
+  {
+    "id": 7,
+    "nombre": "Medidor Láser de Distancia 100m",
+    "slug": "medidor-laser-distancia-100m",
+    "descripcion": "Medidor láser profesional con alcance de 100 metros, pantalla LCD y funciones de área y volumen.",
+    "categoria": "Instrumentos de Medición",
+    "marca": "Bosch",
+    "precio": 1899.99,
+    "imagen": "/images/Medidor Láser de Distancia 100m",
+    "stock": 30,
+    "especificaciones": {
+      "alcance": "100 metros",
+      "precision": "±1.5mm",
+      "bateria": "AAA",
+      "peso": "0.15 kg"
+    }
+  },
+  {
+    "id": 8,
+    "nombre": "Carretilla Industrial 300kg",
+    "slug": "carretilla-industrial-300kg",
+    "descripcion": "Carretilla manual robusta con capacidad de carga de 300kg, estructura de acero reforzado.",
+    "categoria": "Equipo de Carga",
+    "marca": "Truper",
+    "precio": 2499.99,
+    "imagen": "/images/Carretilla Industrial 300kg",
+    "stock": 12,
+    "especificaciones": {
+      "capacidad": "300 kg",
+      "material": "Acero reforzado",
+      "ruedas": "Neumáticas",
+      "peso": "25 kg"
+    }
+  },
+  {
+    "id": 9,
+    "nombre": "Extintor PQS 6kg ABC",
+    "slug": "extintor-pqs-6kg-abc",
+    "descripcion": "Extintor multipropósito de polvo químico seco, ideal para fuegos tipo A, B y C, recargable.",
+    "categoria": "Seguridad Industrial",
+    "marca": "Amerex",
+    "precio": 699.99,
+    "imagen": "/images/Extintor PQS 6kg ABC",
+    "stock": 50,
+    "especificaciones": {
+      "capacidad": "6 kg",
+      "tipo": "ABC",
+      "agente": "PQS",
+      "peso": "9 kg"
+    }
+  },
+  {
+    "id": 10,
+    "nombre": "Casco de Seguridad Tipo II",
+    "slug": "casco-seguridad-tipo-ii",
+    "descripcion": "Casco de seguridad industrial con suspensión de 6 puntos, protección superior y lateral.",
+    "categoria": "Seguridad Industrial",
+    "marca": "3M",
+    "precio": 349.99,
+    "imagen": "/images/Casco de Seguridad Tipo II",
+    "stock": 100,
+    "especificaciones": {
+      "tipo": "Tipo II",
+      "suspension": "6 puntos",
+      "material": "HDPE",
+      "peso": "0.4 kg"
+    }
+  },
+  {
+    "id": 11,
+    "nombre": "Generador Eléctrico 5000W",
+    "slug": "generador-electrico-5000w",
+    "descripcion": "Generador portátil de gasolina con potencia de 5000W, arranque eléctrico y manual.",
+    "categoria": "Equipos de Energía",
+    "marca": "Honda",
+    "precio": 15999.99,
+    "imagen": "/images/Generador Eléctrico 5000W",
+    "stock": 6,
+    "especificaciones": {
+      "potencia": "5000W",
+      "combustible": "Gasolina",
+      "autonomia": "8 horas",
+      "peso": "68 kg"
+    }
+  },
+  {
+    "id": 12,
+    "nombre": "Martillo Demoledor Eléctrico",
+    "slug": "martillo-demoledor-electrico",
+    "descripcion": "Martillo demoledor profesional de 1500W con sistema anti-vibración y cincel incluido.",
+    "categoria": "Herramientas Eléctricas",
+    "marca": "DeWalt",
+    "precio": 7899.99,
+    "imagen": "/images/Martillo Demoledor Eléctrico",
+    "stock": 10,
+    "especificaciones": {
+      "potencia": "1500W",
+      "impacto": "45 J",
+      "peso": "10.5 kg",
+      "voltaje": "120V"
+    }
+  }
+]
